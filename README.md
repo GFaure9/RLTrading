@@ -25,7 +25,7 @@ networks (for the Q-value function predictor).
 ## An introduction to the Trading Environment
 
 For $N$ stocks, starting with an initial balance $B_0 = K > 0$ and an initial
-shareholding $S_0 \in \mathbb{R}^+^N$, we define at time $t>0$ the
+shareholding $S_0 \in {\mathbb{R}^+}^N$, we define at time $t>0$ the
 action $A_t \in \mathbb{M}_{N, 2}([0, 1])$
 such that:
 
