@@ -1,0 +1,6 @@
+numpy
+gym
+matplotlib
+tensorflow
+pandas
+yfinance
