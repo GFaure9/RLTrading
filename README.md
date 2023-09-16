@@ -35,7 +35,7 @@ and:
 $$S_{t + 1} = S_t \otimes (\begin{bmatrix}
 1 \\
 1 \\
-\end{bmatrix})- A_t \begin{bmatrix}
+\end{bmatrix} - A_t \begin{bmatrix}
 0 \\
 1 \\
 \end{bmatrix}) + 
@@ -56,7 +56,7 @@ to the percentages of holding shares of each stock sold at $t$.
 
 For now, the reward has been defined as the _rate of return_ (RoR):
 
-$$\frac{\Delta_t}{B_0} \times 100$$ 
+$$reward = \frac{\Delta_t}{B_0} \times 100$$ 
 
 
 ## Usage example
