@@ -115,7 +115,7 @@ class TradingEnv(gym.Env, ABC):
         # Calculate the reward (e.g., profit or loss)
         # todo: review and add penalty for transaction fees
         # reward = self.balance / self.initial_balance
-        reward = 100 * profit_or_loss / self.initial_balance  # return rate
+        reward = 100 * profit_or_loss / self.initial_balance  # RoR
 
         # Check if the maximum number of steps is reached
         done = self.current_step >= self.max_steps

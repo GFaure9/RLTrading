@@ -35,8 +35,7 @@ and:
 $$S_{t + 1} = S_t \otimes (\begin{bmatrix}
 1 \\
 1 \\
-\end{bmatrix})
-- A_t \begin{bmatrix}
+\end{bmatrix})- A_t \begin{bmatrix}
 0 \\
 1 \\
 \end{bmatrix}) + 
@@ -54,6 +53,11 @@ $X_t^{-1}:=(\frac{1}{x^t_1} ... \frac{1}{x^t_N})$ .
 The first column of $A_t$ corresponds to the percentages of the balance
 invested in each stock (one per row) at $t$ while the second column corresponds
 to the percentages of holding shares of each stock sold at $t$.
+
+For now, the reward has been defined as the _rate of return_ (RoR):
+
+$$\frac{\Delta_t}{B_0} \times 100$$ 
+
 
 ## Usage example
 
