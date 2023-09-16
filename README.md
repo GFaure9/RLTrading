@@ -24,10 +24,10 @@ networks (for the Q-value function predictor).
 ---
 ## An introduction to the Trading Environment
 
-For $$N$$ stocks, starting with an initial balance $$B(0) = K$$, at time $$t$$, 
-we define the action $$A_t = () \in R$$ such that:
+For $N$ stocks, starting with an initial balance $B(0) = K$, at time $t$,
+we define the action $A_t = () \in \mathbb{R}$ such that:
 
-$$B_{t + 1} = B_t +$$
+$B_{t + 1} = B_t +$
 
 ???
 
