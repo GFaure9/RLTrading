@@ -26,7 +26,8 @@ networks (for the Q-value function predictor).
 
 For $N$ stocks, starting with an initial balance $B_0 = K > 0$ and an initial
 shareholding $S_0 \in {\mathbb{R}^+}^N$, we define at time $t>0$ the
-action $A_t \in \mathbb{M}_{N, 2}([0, 1])$ s.t. $\sum_{i=1}^{N} {A_t}_{i, j} = 1 for j=1, 2$
+action $A_t \in \mathbb{M}_{N, 2}([0, 1])$
+such that $\sum_{i=1}^{N} {A_t}_{i, j} = 1 for j=1, 2$
 and:
 
 $$S_{t + 1} = B_k ({A_t}_12 {A_t}_22 ... {A_t}_N2)^T + X_{t + 1}^-1 ({A_t}_12 {A_t}_21 ... {A_t}_1N)^T$
