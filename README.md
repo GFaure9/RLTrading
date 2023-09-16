@@ -1,4 +1,4 @@
-# Reinforcement Learning for Multiple Stock Trading
+# Reinforcement Learning for Multiple Stocks Trading
 
 ## About the project...
 This project is in progress. It aims at developing an agent
