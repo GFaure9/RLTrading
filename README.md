@@ -30,7 +30,8 @@ action $A^t = (a^t_{ij}) \in \mathbb{M}\_{N, 2}([0, 1])$
 such that $\sum_{1 \leq i \leq N} a^t_{i, j} = 1$ for $j=1, 2$
 and:
 
-$$S_{t + 1} = S_t \otimes (1 - A^t (0  1)^T) + B_t X_{t + 1}^{-1} \otimes (A^t (1  0)^T)$$
+$$S_{t + 1} = S_t \otimes (1 - A^t \begin{bmatrix} 0 \\ 1 \\ \end{bmatrix}) + 
+B_t X_{t + 1}^{-1} \otimes (A^t \begin{bmatrix} 1 \\ 0 \\ \end{bmatrix})$$
 
 $$\Delta_t = -(S_{t + 1} - S_t) X_{t + 1} $$
 
