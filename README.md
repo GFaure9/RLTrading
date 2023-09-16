@@ -14,8 +14,8 @@ investigation and other techniques must be pursued.
 * The _environment_ for the trading agent (`TradingEnv`), 
 using [gym](https://gymnasium.farama.org/)'s framework. 
 It specifies:
-  - the observations space;
-  - the action space;
+  - the observations' space;
+  - the actions' space;
   - what is done at a step from an action.
 
 
