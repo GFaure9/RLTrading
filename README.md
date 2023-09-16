@@ -32,10 +32,7 @@ action $A_t = (a^t_{ij}) \in \mathbb{M}\_{N, 2}([0, 1])$
 such that $\sum_{1 \leq i \leq N} a^t_{i, j} = 1$ for $j=1, 2$
 and:
 
-$$S_{t + 1} = S_t \otimes (\begin{bmatrix}
-1 \\
-1 \\
-\end{bmatrix} - A_t \begin{bmatrix}
+$$S_{t + 1} = S_t \otimes (\mathbf{1} - A_t \begin{bmatrix}
 0 \\
 1 \\
 \end{bmatrix}) + 
