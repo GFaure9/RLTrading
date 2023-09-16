@@ -30,15 +30,21 @@ action $A^t = (a^t_{ij}) \in \mathbb{M}\_{N, 2}([0, 1])$
 such that $\sum_{1 \leq i \leq N} a^t_{i, j} = 1$ for $j=1, 2$
 and:
 
-$$S_{t + 1} = S_t \otimes (1 - A^t \begin{bmatrix} 0 \\ 1 \\ \end{bmatrix}) + 
-B_t X_{t + 1}^{-1} \otimes (A^t \begin{bmatrix} 1 \\ 0 \\ \end{bmatrix})$$
+$$S_{t + 1} = S_t \otimes (1 - A^t \begin{bmatrix}
+0 \\
+1 \\
+\end{bmatrix}) + 
+B_t X_{t + 1}^{-1} \otimes (A^t \begin{bmatrix}
+1 \\
+0 \\ 
+\end{bmatrix})$$
 
 $$\Delta_t = -(S_{t + 1} - S_t) X_{t + 1} $$
 
 $$B_{t + 1} = B_t + \Delta_t$$
 
 With $X_t$ the stocks prices at time $t$ and using the notation
-$X_t^{-1}:=(\frac{1}{x^t_1} ... \frac{1}{x^t_N}) .
+$X_t^{-1}:=(\frac{1}{x^t_1} ... \frac{1}{x^t_N})$ .
 
 ## Usage example
 
