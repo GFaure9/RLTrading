@@ -13,12 +13,12 @@ investigation and other techniques must be pursued.
 
 * The _environment_ for the trading agent (`TradingEnv`), using [gym](https://gymnasium.farama.org/)'s framework. 
 It specifies:
-  - the observations space
-  - the action space
-  - what is done at a step from an action
+  - the observations space;
+  - the action space;
+  - what is done at a step from an action.
 
 
-* An implementation of a _Deep Q-Learning algorithm_, that allows to easily test different deep neural
+* An implementation of the _Deep Q-Learning algorithm_, that allows to easily test different deep neural
 networks (for the Q-value function predictor).
 
 ---
@@ -26,13 +26,16 @@ networks (for the Q-value function predictor).
 
 For $N$ stocks, starting with an initial balance $B_0 = K > 0$ and an initial
 shareholding $S_0 \in {\mathbb{R}^+}^N$, we define at time $t>0$ the
-action $A_t \in \mathbb{M}_{N, 2}([0, 1])$
-such that:
+action $A_t \in \mathbb{M}_{N, 2}([0, 1])$ s.t. $\sum_{i=1}^{N} {A_t}_{i, j} = 1 for j=1, 2$
+and:
 
-$\Delta_t = 0$
-$B_{t + 1} = B_t + \Delta_t$
+$$S_{t + 1} = B_k ({A_t}_12 {A_t}_22 ... {A_t}_N2)^T + X_{t + 1}^-1 ({A_t}_12 {A_t}_21 ... {A_t}_1N)^T$
 
-???
+$$\Delta_t = 0$$
+
+$$B_{t + 1} = B_t + \Delta_t$$
+
+With $X_t$ the stocks prices at time $t$.
 
 ## Usage example
 
